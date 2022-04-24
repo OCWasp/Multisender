@@ -1,0 +1,131 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"senderAddr","type":"address"},
+				{"name":"tokenRootAddr","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "multiTransfer",
+			"inputs": [
+				{"name":"recipients","type":"address[]"},
+				{"name":"amounts","type":"uint128[]"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "expectTotalAmount",
+			"inputs": [
+				{"name":"amounts","type":"uint128[]"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint128"}
+			]
+		},
+		{
+			"name": "withdrawToken",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onAcceptTokensTransfer",
+			"inputs": [
+				{"name":"tokenRoot","type":"address"},
+				{"name":"amount","type":"uint128"},
+				{"name":"sender","type":"address"},
+				{"name":"senderWallet","type":"address"},
+				{"name":"remainingGasTo","type":"address"},
+				{"name":"payload","type":"cell"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDeposit",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint128"}
+			]
+		},
+		{
+			"name": "setTransferNumber",
+			"inputs": [
+				{"name":"number","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getTransferNumber",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint128"}
+			]
+		},
+		{
+			"name": "setTransferGas",
+			"inputs": [
+				{"name":"value","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getTransferGas",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint128"}
+			]
+		},
+		{
+			"name": "totalTransferGas",
+			"inputs": [
+				{"name":"number","type":"uint128"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint128"}
+			]
+		},
+		{
+			"name": "withdrawGas",
+			"inputs": [
+				{"name":"gasTo","type":"address"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+		{"key":1,"name":"id","type":"uint256"},
+		{"key":2,"name":"creator","type":"address"}
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"transferNumber","type":"uint128"},
+		{"name":"transferGas","type":"uint128"},
+		{"name":"transactionFee","type":"uint128"},
+		{"name":"walletAddress","type":"address"},
+		{"name":"_senderAddr","type":"address"},
+		{"name":"_tokenRootAddr","type":"address"},
+		{"name":"deposit","type":"uint128"},
+		{"name":"id","type":"uint256"},
+		{"name":"creator","type":"address"}
+	]
+}
