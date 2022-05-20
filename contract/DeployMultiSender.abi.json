@@ -1,0 +1,43 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deploy",
+			"inputs": [
+				{"name":"senderAddr","type":"address"},
+				{"name":"tokenRootAddr","type":"address"},
+				{"name":"multiSenderCode","type":"cell"}
+			],
+			"outputs": [
+				{"name":"value0","type":"address"}
+			]
+		},
+		{
+			"name": "withdrawGas",
+			"inputs": [
+				{"name":"gasTo","type":"address"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"counter","type":"uint256"}
+	]
+}
