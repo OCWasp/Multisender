@@ -83,7 +83,7 @@
                 type="textarea"
                 color="secondary"
                 input-style="font-size: 14px;font-weight: 300;line-height: 20px;color: #fff;height:300px;"
-                placeholder="The address and amount are separated by commas"
+                placeholder="0:d291ab784f3ce…,123"
               />
             </div>
             <div v-if="!showUpLoadFile" class="col-11 inTitle q-my-sm row">
@@ -258,8 +258,9 @@ export default ({
         { label: 'FRAX', decimals: 18, address: '0:efed9f9a7e6c455ee60829fd003b2f42edda513c6f19a484f916b055e9aa58d2', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/FRAX/logo.svg' },
         { label: 'FXS', decimals: 18, address: '0:c14e2f026feaae0f99b92c04ee421051a782fff60156ac8a586a12f63d7facef', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/FXS/logo.svg' },
         { label: 'DAF', decimals: 18, address: '0:f48054939064d686a9ad68d96d9ab79e409b095557c06ab7f073097dade7057f', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/DAF/logo.svg' },
-        { label: 'EURS', decimals: 2, address: '0:00ca16398f314a9b3bed582dc69582515d866ededb6c4e18190f63b305cedf91', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/EURS/logo.svg' },
         { label: 'EUPi', decimals: 8, address: '0:0cfa60f9454b1b619938c4da6a138b1cc62da937b3f6c0506405daf2a88e0115', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/EUPi/logo.svg' },
+        { label: 'PURR', decimals: 18, address: '0:9d49206b0eaadc5125c6b5e30410505db7740f827857915922cdb7efe199b622', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/PURR/logo.svg' },
+        { label: 'INF', decimals: 18, address: '0:2f84387836c950ce35ecacac5b86040961571aaf4630ecb68ccc85ff218213c1', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/INF/logo.svg' },
         { label: 'EVS', decimals: 9, address: '0:e5d964bf76b90a29ca11ff03a0402eeca6a1c79a0fb4d8a2f06a67be0537a6bf', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/EVS/logo.svg' },
         { label: 'SOON', decimals: 18, address: '0:a15e6a7a91c331ddcd85675ca64d5a7db8c7e94b35806b2e05bf4bce29d21023', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/SOON/logo.svg' },
         { label: 'GRE', decimals: 5, address: '0:fde4c629d6447fecd86d2cffe363d5f334030351022bad019e0f472212e9dc99', icon: 'https://raw.githubusercontent.com/broxus/ton-assets/master/icons/GRE/logo.svg' },
